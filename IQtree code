@@ -1,0 +1,4 @@
+##IQtree code used to find best supported model
+.\iqtree3 -s snp5.fas -m TEST -nt AUTO
+##IQtree code used after selecting best model with +ASC ascertation bias
+.\iqtree3 -s snp_file.fas -m K3Pu+ASC -nni 0 -B 10000 -alrt 10000 -nt AUTO
