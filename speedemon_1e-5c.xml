@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='snapper' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.8:snapper v1.1.5:speedemon v1.1.0:SNAPP v1.6.1:ORC v1.2.1" version="2.7">
+        
+
+    <data
+id="from_tree_no_
+constant_no_outgroup"
+spec="Alignment"
+name="rawdata">
+                                
+        <sequence id="seq_001" spec="Sequence" taxon="001" totalcount="4" value="CTGGTCACGTAGAACCGCCCGKCGATAAATTAATGCGCCGGCYTYGCACGATAGGTTATTGRARCTCCTTTTGAAGGAATCGTAATAGGATTSTCRTCCCTAAGTAGTARYMAAAGAAACAWTCTTCTTCGRCYYGAATCARTTAATGAACGGATAYAYYGATAKAGGGTGTGTTCCCTCGCTCTTCTTGTTCTCSTATTTTARGTTATTAGCCTAATTGATTCACAYATRCTTGAGTAAAAGKAAGCYTTAGAGGGTCACACTATCTTATCTTCTAATGAMACTCGCTGTCGATTGAACAGAGGCCGCATCCTAGGWWGGCACCGGMCCAGCSCATYTTCTTAACCCATGYSKAAACAARCTACAACTATCTGAGTGTGGAATTGGCATAGGTGGTCGCGAGCCAASTGAKTCAGCACTGCTATAATTTWTAACGCTACGAWGAGACTCTTTTYGAGTCGCCAAAAYCAAAMTCTGATATCCAAGATGCTTACTGAATCTTGAGTATACAAGCTAGTAGACCMGGCGACCCGGTCCAAKCTTTTSTYCAGGCAGTGATCTTTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTTTCCACTRGCCGCATACGCTCRGCASTCCACGGTGGCTCCTTCTA"/>
+                                
+        <sequence id="seq_002" spec="Sequence" taxon="002" totalcount="4" value="CTGGTCACGTAGAACCGCCCGGCGATAAAYTAAWGCGCCGGCYTCGCACGATAGGTTATTTGAGCTCCTKTTGAARGRAWMGTAAWAGGATTCTCRTCCCTAAGTAGTAATCAAARWAACATTCTWCTTTGACTTGAATCAATTAATGAACGRATAYAYYGATATAGGGTGTGTTCCCTCGCTMTTCTTGTTCTCGTAYTTTAAGTTATTMGCCTAWTWRATTCACACATGCTTGAGTAAAAGKAAGCCTTAGAKGGTCACACTATCCTATCWTCTAATGAMAMTCGCTGTCGATYSAACAGAGGCCGMATCCTRGGAAGGCACCGGMCCAGCCGATTGTCTTAAYCCATACSKAAACAARCTACAACTATCTGAGTGTGGAATTGGCATAGGTGGTCGCGAGYCAAGTGAGTCAGCACTSCTATAATTTWTACCGCTACGAAGAAACTCTTTTCGAGTCGCAAAAACCGAAMTCTGATMTCCAAKAYGCTTACTGAATCTTGAGTATACAAGCTRGTAKACCMGGCGACCCGTTCCAATCTCTTGTTCAGGCCGTGCTCATTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTTTCCACKRGTCGCATACGCTCAGCACTCCACGGTGGCTCCTTCTA"/>
+                                
+        <sequence id="seq_004" spec="Sequence" taxon="004" totalcount="4" value="CYGGTCACGTAGAACCGCCCGKCGATAAACTAAAGCGACGGCCTYGCACGATAGGTTAWYKGAGCTCCTKTTGAARGRATCGTAAWAGGATTSTCATCCCTAAGTAGTAATMAAARWAACATTCTWCTTCGACTTGAATCAGTTAATGAACGRATAYAYYGATAGAGGGTGYGTTCCCTCGCTCTTYTTGTTCTCSTATTTTARGTTATTCGCCTAWTWRATTCACATATACTTGAGTAAAATTAAGCCTTAGAKGGTTRCACTAWCYTATCWTCTAATGAMAMTCGCTGTCGAYCGAACAGAGGCCGCATCCTRGGWAGGCWCCGGACCAGCSSATTKTCTTAACCCATGCGKAAACAAGCTACAACTATCTGAGTGTGGAATTGGCATAGGTGGTCGCGAGYCAASTGAKTCAGCACTGCTATAATTTATAMYGCTACGAWGAGACTCTTTTTGAGTCGCMAAAAYCAAAATCTGATMTCCAAGAYGCTTACKAAATCTWGAGTATACAAGCTRGTAGACCAGACGACCCGGTCCMAGCTTTTSTYCAGGCAGTGATCTTTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTWYCCACKAGCCGCATACGCTCAGCASTCCACGGTGGCTCCTTCTA"/>
+                                
+        <sequence id="seq_224" spec="Sequence" taxon="224" totalcount="4" value="CTGGTCACGTAGAACCGCCCGTCGATAAAYTAAAGCGCCGGCTTYGCACGATAGGTTATTKGAGCTCCTKTTGAARGRATCGTAAWAGGATWCTCATCCCTAAGTAGTARYCAAARWAACAWTCTWCTTCGACYYGAATCARTTAAYGAACGGATAYAYYGATAKAGGGYGTKTTCCCTCGCTCTTYTTGTTCTCCTAYTTTAAGTTATTAGCCTAATWRATTCACAYATACTGGAGTAAAATKAAGCYTTAGAKGGTCACACTAACCTATCWTCTAATGAMAMTCGCTGTCGATTSAACAKAGGCCGCATCCTRGGATGGCACCGGMCCAGCCSATYGTCTTRAYCCGTGCGGAAACAAGCTACAACTATCTGACKGYGGAATTGGCATAGGTGGTCGCGAGCCAAGTGAKTCAGCACTGCTATAATTTATAMYGCTACGAWGAGACTCTTTTYGAGTCGCAACAAYCRAAMTCTGATCTCCAAGATGCTTACGGAATCTTGAGTATAMAAGCTGGTAGACCAGGCRACCCGTTCCAATCTTTTSTYCAGGCAGTGMTCWTTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTWCYCACTAGCCGCATACGCTCAGCASTCCACGGTSGCTCCTTCGA"/>
+                                
+        <sequence id="seq_226" spec="Sequence" taxon="226" totalcount="4" value="CTTACTCCGKGATCTGTCTATTCAGWRRGCYRGTTAACAAATTGTRACGAGCCCTCCGATTGGGCGTCCTKGACCGGGGAAGGGGAMCTTCTCGTATTGTCGGTAGGYGATCCGRATGTTTTTTATTCWCCGTCCAGGTYMAGGGGTTGACGGGCGCCTTTTGTGAARKTTTTCCGACCTCSCCAACGAAGGYCTCYGTCCGTAATGGCTCATTCCTCTGCGGTGTGCGGAACTTMACCCGTTGGCCTTYCCTTTAGCTAAGTWTTGCCRCTTATGGTGRCCGAGGATTCCTTGTTCCGTGTGATTTGCGTYAAGAATACATTCATTCAAGAGCGGACGCTKAACTTGGCGTCTGGTAGGGAGGGCAAYMGGCAGCTATTCTGTCGGTMTAAGGGGCTTGTGTTTGCCWTMGCCCAGGGGGTTGCATGAGTAGCCTTGGACGTACGGACMCCCTTTACCTTCAGAGGTTAACACTCGCGACYATCGGCSGCCTTTGGGGGTATCGCGGCAATATYGTGTGGASARGTGATTGATGGTAGTAGCTGGATTGRATACGAAATTYCTCGGGGGCCCGRTCCACTTGTCGAYCCGGAGCTTCACTTGGGACCCGAGGCTTMGGGATCGGATGCACCGATGTTCCTTA"/>
+                                
+        <sequence id="seq_227" spec="Sequence" taxon="227" totalcount="4" value="TTTACTCSGKGRTCTGTCTATTSAGWAAGCYGGTTAACAARTTGTRACGAGYMCTCCGATTGGGMGTCCTTKACCGGGRAARKGGAAGTTCTCGTACTGTCGGTAGTTRATCAGRATGTTTTTTATTCWCCGTCCAGGTTMAGGGGTTGRYRGGCGCCYTTTGTGAARTTTTTCCGACYTCGCCAACGAAGTTCTCCGTCCGTAATGGCTCATTCCTCTGCGGYGCGCGGAMCTTCACCCGTTGGCCTTCCCTTTAGYTAAGTATTGCCGCTTTTKRTGRCCGAGSATTCCTTGTTCCGTGTGRTTTCCGTTAAGAATACGTTCATTCAAGAGCGGACGCTTAACTTGGCGTCTGGTAGGGAGGGCCAYMGGTAGCTATTCTGTCGGTMTAAGGGGCTTGTGKTTGCCWTCGCCCAGGGTGTYGCATGAGTAGCCTTGGACGTACGRACMCCCTTKASCTTCAGAGRTCAMCACTYGCGACYATCGRCCGCCTTTGGGGGGATCKCGGCATTATTGKGTGGAGARGTGWTTGATGGYAGTAGCWGGATCGAATACGAAATTCCTCGGGGAACCRATCCACTTGTCGACCCGGAGCTTYACCYGGGACCYGAGKCCTCGGGGTCGGATGMACCGATGYTCCTTR"/>
+                                
+        <sequence id="seq_228" spec="Sequence" taxon="228" totalcount="4" value="CTTACTCSAKGATMTGTGTATTCAGWRRGCYGGTTAACAAATTGTRACGAGYCCTCCGATTGGGMGTMCTTGACCGGGGAAAGGGAMSTTCTCGTAYTGTCGRTWGGYRATCAGGATGTTWTTTATTCWCCGTCCAGGTTMAGGGGTTGACGGGCGCCYTKWGTGAAGTTTTTCCGACYTCSCCAACGAAGKYCTCTGTCCGTAATGGCTCATTCCTCTGCGGCGCRCGGAMCTTAACCCGTTGGCCTTYCCTTTAACTAAGTATTGCCGCTTATTATGRCCGAGGATYCCTTGTTCCGTGTGATTTCCGTYAAGAATACGTTCATTCAAGAGCGGACGCTGAACTTGGCGTCTGGTAGGGAGGGCAAYMGGYAGCTATTCTGTCGGTATAAGGGGCTTGTGTTTRCCTTMGCCCAGGGTGTTGCATGAGTAGCCTTGGACGTACGGACMCCCTTTACCTTCAGAGRTYAACACTYGCGACTATCGGCSGCCWTTGGGGGKATCGCGGCAWTATYGKGTGGAGARGTGTTYCATGGCAGTAGCTGGATYGGRTACGAAATTCCCCGGGGGCCCGGTCCACTTGTCGATCCGGAGCTTYACYYGGGACCCRAGGCYTAGGGATCGGATGMACCGATKYTCCTTR"/>
+                                
+        <sequence id="seq_229" spec="Sequence" taxon="229" totalcount="4" value="CTTACYCGGGGATCTGTSTATTCAGAGGGCCAGTTAACAARTTTTRACGAGCCCTCCGATTGGGAGTACTGGACCGGGGAAGKGGAMSTTCTCGTACTGTCGGTAGGCRATCAGRATGTTTTTTATTCTCCGTCCAGGTCMAGKGGTTGRYRGGCGCCYTGAGTGAAGKTTTTCCGACCTCCCCAACGAAGKYCTCYGTCCGTAATKGCTCATTCCTCTGCGGTGYGCGGAMCTTCACCCGTTGGCCTTYYCTTTAGYTAAGTWTTGCCGCTTATTATGRCCGAGGATYCCTTGTTCCGTGTGRTTTGCGTTAAGAATACRTTCATTCAAGAGCGGACGCTGAACTTGGCGTCTGGTAGGGAGGGCMATCGGCAGCTATTCTGTCGGTMTAAGGGGCTTGTGGTTGCCWTCGCCCAGGGKGTTGCATGAGTAGCCTTGGACGTACGGACCCCCTTTACCTTCAGAGATTAACACTYGCGACTATCGGCGGCCTTTGGGGGGATCKYGGCAATATYGTGTGGACAAGTGATTSATGGTAGTAGCTGGATYGRRTACGAAATTCCYCGGGGAACCGATCCACTTGTCGACCCKGAGCTTYACTTGGGACCTAAGKCCTAGGGATCGGATGAACCGATGCTCCTTR"/>
+                                
+        <sequence id="seq_232" spec="Sequence" taxon="232" totalcount="4" value="CTTACTCGGGGATMTGTCTATTSAGWRRGCYGGTTAACAAATTGTAACGAGCCCTCCGATTGGGAGTMCTTKACCGRGRAAGKGGAMCTTCTCGTAYTGTCGGTAGGYGATCAGRATGTTTTTTATTCACCGTCCAGGTYMAGGGGTTGAYRGGCGCCYTKWGTGAARKTTTTCCGACCTCSCCAACGAAGKTCTCCGTCCGTAATGGCTCATTCCTCTGCGGYGYGCGGAMCTTMACCCGTTGGCCTTCCCTTTARCTAAGTATTGCCRCTTWTTATGACCGAGSATYCCTTGTTCCGTGTGATTTSCGTTAAGAATACGTTCATTCAAGAGCGGACGCTTAACTTGGCGTCTGGTAGGGAGGGCMACAGGTAGCTATTCTGTCGGTMTAAGGGGCTTGTGTTTRCCATMGCCCAGGGTGTTGCATGAGTAGCCTTGGACGTACGRACMCCCTTKACCTTCAGAGRTYAMCACTCGCGACYATCGGCSGCCTTTGGRGGKATCKTGGCAATATYGGGTGGACAAGTGATYSATGGTAGTAGCTGGATTGARTACGAAATTCCYCGGGGAMCCGRTCCACTTGTCGAYCCGGASCTTYACCTGGGACCYGAGKCCTMGGGGTCGGATGMACCGATGYTCCTTG"/>
+                                
+        <sequence id="seq_236" spec="Sequence" taxon="236" totalcount="4" value="CCGGTCACGTAGAACCGCCCGKCRRTAAACTAATGCGCCGGCTTCGCACGATAGGTTATTKGAGCTCCTGTTGAAAGGATCGTAAAAGGATWCTCATCCCTAAGTAGTAATMAAAGAAACAATCTACTTYGACYTGAATCARKTAAYGAACGGATACACCGATAGAGGGTGTGTTCCCTCGCTCTTYTTGTTCTCCTATTTTARGTTATTCGCCTAWTTGATTCACAYATACTTGAGTAAAATKAAGCYTTAGATGGTTRCACTATCYTATCTTCTAATGAMACTCGCTGTCGATTSAACAGAGGCCGMATCCTRGGAAGGCWCCGGACCAGCGCATYKTCTTAAYCCATGYCKAAACARGCTACAACTATCTGAGTGYGGAATTRGCAKMGGTGATCGCGAGCCAAGTGAKTCAGCACTSCTATAATTTWTAMTGCTACGAWGAGACTCTTTTCGAGTCGYAAMAAYCGAAMTCTGATCTCCAAGATGCTTACTGAATCTTGAGTATACAAGCTRGTAKACCAGGCGACCCGKTCCAATCTTTTSTCCAGGCAGTGMTCWTTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTTCCCACGAGYCGCATACGCTCAGCASTCCACGGTCGYTCCTTCGA"/>
+                                
+        <sequence id="seq_237" spec="Sequence" taxon="237" totalcount="4" value="CYGGTCACGTAGAACCGCCCGKCAGTAAATTAAWGCGCCGGCYTCGCACGATAGGTTATYTGAGCTCCTKTTGAAAGGATCGTAAAAGGATTSTCGTCCCTAAGTAGTARYMAAARWAACATTCTTCTTCGACCTGAATCAGTTAATGAACGGATATAYCGATAGAGGGYGTGTTCCCTCGCTMTTYTTGTTCTCGTATTTTARGTTATTCGCCTAWTTGATTCACACATACTKGAGTAAAATKAAGCYTTAGAGGGTTACACTATCYTATCTTCTAATGACAMTCGCTGTCGATYGAACAGAGGCCGCATCCTRGGAWGGCACCGGACCAGCSSATYTTYTTAACCCATGCCGAAACAARCTACAACTATCTGAGTGYGGAATTRGCATMGGTGGTCGCGAGYCAAGTGAGTCAGCACTGCTATAATTTWTAMCGCTACGAWGAGACTCTTTTCGAGTCGCMAMAAYCGAACTCTKATCTCCAATATGCTTACTGAATCTWGAGTATACAAGCTGGTAKACCCGGCRACCCGTTCCAATCTYTTGTCCAGGCAGTGCTCATTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCYTATCCACGAGYCGCATACGCTCAGCASTCCACGGTGGCTCCTTCKA"/>
+                                
+        <sequence id="seq_238" spec="Sequence" taxon="238" totalcount="4" value="CTGGTCACGTAGAACCGCCCGKCGATAAATTAATGCGCCGGCTTCGCACGRTAGGTTATYGGAGCTCCTKTTGAAAGGATCGTAAAAGGATTCTCRTCCCTAAGTAGTARYCAAARWAACAWTCTACTTYGACYTGAATCAGTTAAYGAACGGATACAYYGATAGAGGGCGYGTTCCYTCGCTCTTTTTGTTCTCSTAYTTTAGGTTATTCGCCTAATWRATTCACAYATACTKGAGTAAAATTAAGCYTTAGATGGTCRCACTAACYTATCATCTAATGAMAMTCGCTGTCGATTGAACAGAGGCCGMATCCTRGGWWGGCWSCGGMCCAGCCGATYTTCTTAACCCRTGCSKAAACAARCTACAACTATCTGAGTGTGGAATTRRCATAGGTGGTCGCGAGCCAAGTGAGTSAGCACTGCTATAATTTWTAMCGCTACGAARMRACTCTTTTTGAGTCGCAAMAATCGAAMTCTGATCTCCAAGAYGCTTACKRAATCTTGAGTATACAAGCTRGTATACCMGRCAACCCGKTCCMATCTYTTSTYCAGGCMGTGATCTTTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCCTWYCCACGRGYCGCATACGCTCAGCASTCCACGGTCGCTCCTTCKA"/>
+                                
+        <sequence id="seq_239" spec="Sequence" taxon="239" totalcount="4" value="YTTACYCCGKGATMTSTSTATTSAGAAAGCTGGTTAACAAATTKTRACGAGYCCTCCGATTGGGCGTMCTKKACCGRGGAAGGGGAMCTTYTCGTACTGTCGGTAGKCRATCMGRATGTTTTTTATTCTCCGTCCAGGTYMAGKGGTTGRTAGGCGCCYTKWGTGAAATTTTTCCGACYTCGCCWACGAAGGTCTCCGTCCGTAATGGCTCATTCCTCTGCGGYGTGCGGAMCTTCACCCGTTGGCCTTCCCTTTAGTTAAGYATTGCCGCTTWTKRTGRCCGAGGATCCCTTGTTCCGTGTGATTTSCGTYAAGAATACATTCATTCAAGAGCGGACGCTKAACTTGGCGTCTGGTAGGGAGGGCMACAGGCAGCTATTCTGTCGGTMTAAGGGGCTTGTGGTTGCCWTMGCCCAGGGTGTCGCATGAGTAGCCTTGGACGTACGRACACCCGTKACCTTCAGAGGTCACCACTYGCGACTATCGRCSGCCTTTGGGGGTATCTYGGCATWATCGKGTGGAGAAGTGTTTGATGGYAGTAGCAGGATYGGATACGAAATTCCCCGGGGAACCRATCCACTTGTYGACCCGGAGCTTCACTTGGGACCYRAGGCCTMGGGRTCGGAYGMACCGATGTYCCTTR"/>
+                                
+        <sequence id="seq_240" spec="Sequence" taxon="240" totalcount="4" value="CTTACTCGRGGATCTGTCTATTCAGWGGGCYRGTTAACAAATTGTRACGAGYCCTCCGATTGGGCGTACTTTACCGAGGAARKGGACCTTCTCGTAYTGTCGGTAGGCGATCAGAATGTTTTTTATTCWCCGTCCAGGTYMAGGGGTTGACGGGCGCCYTGAGTGAAGKTTTTCCGACYTCSCCAACGAAGTTCTCCGTCCGTAATGGCTCATTCCTCTGCGGYGYGCGGAACTTCACCCGTTGGCCTTYCCTTTAGYTAAGYWTTGCCRCTTWTKRTGGCCGAGGATCCCTTGTTCCGTGTGATTTSCGTTAAGAATACRTTCATTCAAGAGCGGACGCTGAACTTGGCGTCTGGTAGGGAGGGCAACAGGCAGCTATTCTGTCGGTMTAAGGGGCTTGTGKTTGCCWTAGCCCAGGGTGTTGCATGAGTAGCCTTGGACGTACGRACCCCCTTKACYTTCAGAGRTTAACACTCGCGACTATCGGCCGCCWTTGGGGGKATCTCGGCAWTATYGKGTGGAGAAGTGATTGATGGYAGTAGCTGGATYGAATACGAAATTCCCCGGGGRMCCGATCCACTTGTCGACCCKGAGCTTYACYTGGGACCCGAGKCCTMGGGRTCGGATGAACCGATKCTCCTTG"/>
+                                
+        <sequence id="seq_241" spec="Sequence" taxon="241" totalcount="4" value="CTGGTCACGTAGAACCGCCCGTCGATAAAYTAAWGCGMCGGCTTYGCACGATAGGTTATYGGAGCTCCTKTTGAARGRAWMGTAAWAGGATWSTCRTCCCTAAGTAGTARYMAAAGAAACAWTCTTCTTYGACCCGAATCAGTTAATGAACGRATACACYGATAGAGGGTGTGTTCCCTCGCTCTTCTTGTTCTCSTAYTTTARGTTATTMGCCTAATWRATTCACAYATGCTTGAGTAAAATKAAGCYTTAGAGGGTYACACTAWCCTATCWTCTAATGACACTCGCTGTCGATTGAACAGAGGCCGCATCCTGGGWAGGCACCGGMCCAGCCCATTTTCTTAACCCATGCCTAAACAAACTACAACTATCTGAGTGYGGAATTRACATMGGTGGTCGCGAGYCAAGTGAKTCAGCACTGCTATAATTTWTAACGCTACGATGAAACTCTTTTYGAGTCGCMAAAACCAAAMTCTTATMTCCAAKATGCTTACTGAATCTWGAGTATACAAGCTRGTAGACCMGGCRACCCGTTCCAATCTTTTGTCCAGGCCGTGMTCWTTTTAAACAAGTAGCAACTCYACTCGCAGTTCCGCCTTYYCACGRGYCGCATACGCTCAGCAGTCCACGGTGGCTCCTTCTA"/>
+                                
+        <sequence id="seq_243" spec="Sequence" taxon="243" totalcount="4" value="TTTACTCCGTGATCTGTCTATTGAGAAAGCCRGTTAACAARTTGTAACGRGYCCTCCGATTGGGMGTMCTGGACCGGGRWMGKGGAMCTTYTCGTACTGTCGGTAGGYGATCAGRATGTTTTTTATTCWCCGTCCAGGTYCAGGGGTTGGCGGGCGCCYTTTGTGAARTTTTTCCGACCTCSCCAACGAAGTTCTCCGTCCGTAATGGCTCATTCCTCTGCGGYGTGCGGAMCTTCACCCGTTGGCCTTYYCTTTAGCTAAGTWTTGCCRCTTTTTATGRCCGAGSRTCCCTTGTTCCGTGTGATTTCCGTTAAGAATACATTCATTCAAGAGCGGACGCTKAACTTGGCGTCTGGTAGGGAGGGCAACAGGYAGCTATTCTGTCGGTCTAAGGGGCTTGTGTTTGCCWTMGCCCAGGGTGTTGCATGAGTAGCCTTGGACGTACGAACCCCCKTKACCTTCAGAGGTYACCACTCGCGACYATCGRCCGCCTTTGGGGGKATCGYGGCAWTATYGKGTGGASAGGTGWTTGATGGCAGTAGCTGGATYGGGTACGAAATTYCYCGGGGRMCCRATCCACTTGTCGATCCTGAGCTTCACYYGGGACCYGAGGCCTAGGGRTCGGATGMACCGATGYTCCTTR"/>
+                                
+        <sequence id="seq_248" spec="Sequence" taxon="248" totalcount="4" value="CYGGTCACGTAGAACCGCCCGGCGATAAAYTAATGCGCCGGCYTYGCACGATAGGTTATTGRAGCTCCTKTTGAARGRATCGTAAWAGGATTGTCATCCCTAAGTAGTAATCAAAGAAACAWYCTACTTCGACCCGAATCAGTTAATGAACGRATACATYGATAKAGGGYGTGTTCCCTCGCTCTTCTTGTTCTCCTAYTTTARGTTATTCGCCTAWTAAATTCACACATRCTKGAGTAAAATKAAGCYTTAGAGGGTCACACTAWCYTAYCTTCTAATGAAACTCGCTGYCGATYCAACAGAGGCCGCATCCTGGGTAGGCACCGGMCCAGCGSATYKTCTTAACCCATGCCKAAACAAGCTACAACTATCTGAGTGCGGAATTRGCATAGGTGRTCGCGAGCCAASTGATTCAGCACTGCTATAATTTTTAMYGCTACGAWGAGACTCTTTTYGAGTCGCAAAAATCAAAATCTGATMTCCAAGACGCTTACKGAATCTTGAGTATACAAGCTGGTATACCCGGCGACCCGGTCCCATCTTTTSTYCAGGCAGTGATCTTTTTAAASAAGTAGCAACTCCACTCGCAGTTCCGCCTACYCACTAGCCGCATACGCTCRGCACTCCACGGTSGCTCCTTCTA"/>
+                                
+        <sequence id="seq_249" spec="Sequence" taxon="249" totalcount="4" value="CYGGTCACGTAGAACCGCCCGTCGATAAATTAATGCGCCGGCTTCGCACGATAGGTTAWTTAAGCTCCTTTTGAAGGAATCGTAATAGGATTSTCGTCCCTAAGTAGTAGCCAAARWAACATYCTTCTTCGACYYGAATCARTTAAYGAACGRATACACYGATAGAGGGTGTGTTCCCTCGCTMTTYTTGTTCTCSTACTTTARGTTATTMGCCTATTWRATTCACACATGCTTGAGTAAAATGAAGCCTTAGAKGGTYACACTAWCCTATCTTCTAATGAMAMTCGCTGTCGATTSAACAGAGGCCGCAKCCTRGGWWGGCAGCGGACCAGCSCATTGTCTTAAYCCRTRCCGAAACAAGCTACAACTATCTGAGTGTGGAATTRGCATCGGTGGTCGCGAGTCAACTGAKTCAGCACTGCTATAATTTWTAAYGCTACGAWGARACTCTTTTYGAGTCGCMAMAAYCRAAMTCTGATMTCCAAKATGCTTACTGAATCTWGAGTATACAAGCTGGTAGACCCGGCRACCCGKTCCAAKCTTTTCTCCAGGCAGTGATCTTTTTAAASAAGTAGCAACTCCACTCGCAGTTCCGCCTAYYCACGRGCCGCATACGCTCAGCASTCCACGGTSGCTCCTTCTA"/>
+                                
+        <sequence id="seq_250" spec="Sequence" taxon="250" totalcount="4" value="CTGGTCACGTAGAACCGCCCGKCRRTAAATTAATGCGCCGGCTTYGCACGATAGGTTATCKRAGCTCCTGTTGAAAGGATCGTAAAAGGATWCTCRTCCCTAAGTAGTAGCCAAARWAACATTCTWCTTYGACCYGAATCAGTTAATGAACGGATAYACYGATAKAGGGYGTKTTCCCTCGCTCTTYTTGTTCTCGTACTTTARGTTATTMGCCTAATAAATTCACAYATRCTTGAGTAAAAKGAAGCYTTAGAGGGTCACACTATCCTATCWTCTAATGAAACTCGCTGTCGAYTSAACAGAGGCCGCATCCTAGGWAGGCWSCGGCCCAGCSSATTKTYTTAAYCCRTGCCGAAACARGMTACAACTATCTGASKGTGGAATTARCATMGGTGRTCGCGAGCCAAGTGAKTSAGCACTGCTATAATTTWTAMCGCTACGAWGAGACTCTTTTTGAGTCGTAAMAACCAAAATCTGATMTCCAAGATGCTTACTGAATCTTGAGTATACAAGCTGGTAGACCCGGCRACCCGTTCCAATCTTTTGTYCAGGCCGTGCTCATTTTAAACAAGTAGCAACTCCACTCGCAGTTCCGCYTTYCCACGGGCCGCATACGCTCAGCASTCCACGGTSGCTCCTTCKA"/>
+                                
+        <sequence id="seq_253" spec="Sequence" taxon="253" totalcount="4" value="CYGGTCACGTAGAACCGCYCGTCAGTAAACTAATGCGCCGGCYKYGCACGATAGGTTATYTGAGCTCCTKTTGAAGGGATCGTAAAAGGATACTCATCCCTAAGTAGTAATAAAAATAWCAAYYWTCTTYGACTTGAACCARTTAATGAACGAATACACYGATAGGGGGTGYKTTCCTTCGCTATTCTTGTTCTCGTATTTTARGWTATACGCTTAATTGATTCACAYATRCTTGAGTAAAATKAAGCYTTAGAGGGTYRCRCTAACCTATCATCTAATGMAACTCGCTGTCGACTGMACAGRGGCCGAAGCCTGGGTAGGCASCGGMCCAGCSSATTGTTTTRAYCCGTGCCKAAACARGCTACAACTATCTGACGGTGGAACTGGCAGAGTTAGTCGCGAGTCAACTGAGTGAGGACTGCTRCTATTTWTACCGCTACGATGAGACTCTTTTYGCGTCGCAAMARTCRAAMTCTKATCTCCAAGAYGCTTACGGAATCTTGAGTATACAAGCTGGTAKACCAGGCRACCCRTKCCAATCTTTTGTYCAGGCCGTGATCTTTTYRAAGAASTAGCAACTCTACTCGCAGTTCCGYYTWYCCACGAGCCGCATACGCTCAGCASTCCACGGTSGCTCCTTCKA"/>
+                                
+        <sequence id="seq_257" spec="Sequence" taxon="257" totalcount="4" value="CTGGTCACGTAGAACCGCCCGKCAGTAAACTAATGCGMCGGCYTCGCACGATAGGTTATYTGAACTCCTKTTGAAGGGATCGTAAAAGGATWCTCATCCCTAAGTAGTARYCAAAATAACAACCTWCTTCGACYTGAAYCAGTTAACGAACGGATACACCGATAGRGGGTGCTTTCCCTCGCTATTCTTGTTCTCCTATTTTAAGATATACGCTTAATTGATTCACAYATACTKGAGTAAAATKAAGCYTTAGAKGGTCGCACTAWCYTATCWTCTAATGAMACTCGCTGTCGAYYCAACAGAGGCCGCATCCTRGGWWGGCACCGGMCCAGCCSATCGTTTTGACCCRTGCCTAAACAARCTACAACTATCTGACGGTGGAAYTGGCAGAGTTRGTCGCGAGTCAACTGAKTSAGSACTCCTACTATTTTWACCGCTACGAWGAGACTCYTTTCGMGTCGCMAMAACCGAAATCTKATATCCAAGATGCTTACTGAATCTTGAGTATACAAGCTRGTAKACCMGRYGACCCGTTCCAATCTYTTGTCCAGGCMGTGATCTTTTTAAASAASTAGCAACTCYACTCGCAGTTCCGCCTWCCCACTAGCCGCATACGCTCAGCASTCCACGGTGGCTCCTTCTA"/>
+                            
+    </data>
+        
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    
+
+    <run id="mcmc" spec="MCMC" chainLength="30000000">
+            
+        <state id="state" spec="State" storeEvery="5000">
+                    
+            <tree id="Tree.t:from_tree_no_ constant_no_outgroup" spec="beast.base.evolution.tree.Tree" name="stateNode" nodetype="snap.NodeData">
+                            
+                <taxonset id="TaxonSet.from_tree_no_ constant_no_outgroup" spec="TaxonSet">
+                                    
+                    <alignment id="snapper.from_tree_no_ constant_no_outgroup" spec="snapper.Data" dataType="integerdata">
+                                            
+                        <data idref="from_tree_no_
+constant_no_outgroup"
+name="rawdata"/>
+                                            
+                        <taxonset id="fjord" spec="TaxonSet">
+                                                    
+                            <taxon id="001" spec="Taxon"/>
+                                                    
+                            <taxon id="002" spec="Taxon"/>
+                                                    
+                            <taxon id="004" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                            
+                        <taxonset id="barents" spec="TaxonSet">
+                                                    
+                            <taxon id="250" spec="Taxon"/>
+                                                    
+                            <taxon id="241" spec="Taxon"/>
+                                                    
+                            <taxon id="224" spec="Taxon"/>
+                                                    
+                            <taxon id="236" spec="Taxon"/>
+                                                    
+                            <taxon id="237" spec="Taxon"/>
+                                                    
+                            <taxon id="248" spec="Taxon"/>
+                                                    
+                            <taxon id="238" spec="Taxon"/>
+                                                    
+                            <taxon id="249" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                            
+                        <taxonset id="oval" spec="TaxonSet">
+                                                    
+                            <taxon id="243" spec="Taxon"/>
+                                                    
+                            <taxon id="226" spec="Taxon"/>
+                                                    
+                            <taxon id="227" spec="Taxon"/>
+                                                    
+                            <taxon id="228" spec="Taxon"/>
+                                                    
+                            <taxon id="229" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                            
+                        <taxonset id="round" spec="TaxonSet">
+                                                    
+                            <taxon id="240" spec="Taxon"/>
+                                                    
+                            <taxon id="232" spec="Taxon"/>
+                                                    
+                            <taxon id="239" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                            
+                        <taxonset id="faroe" spec="TaxonSet">
+                                                    
+                            <taxon id="257" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                            
+                        <taxonset id="yermak" spec="TaxonSet">
+                                                    
+                            <taxon id="253" spec="Taxon"/>
+                                                
+                        </taxonset>
+                                        
+                    </alignment>
+                                
+                </taxonset>
+                        
+            </tree>
+                    
+            <parameter id="snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" lower="1.0E-10" name="stateNode" upper="10.0">1.0</parameter>
+                    
+            <parameter id="SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+                    
+            <parameter id="SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.5</parameter>
+                
+        </state>
+            
+        <init id="RandomTree.t:from_tree_no_ constant_no_outgroup" spec="RandomTree" estimate="false" initial="@Tree.t:from_tree_no_ constant_no_outgroup" taxa="@snapper.from_tree_no_ constant_no_outgroup">
+                    
+            <populationModel id="ConstantPopulation0.t:from_tree_no_ constant_no_outgroup" spec="ConstantPopulation">
+                            
+                <parameter id="randomPopSize.t:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+                        
+            </populationModel>
+                
+        </init>
+            
+        <distribution id="posterior" spec="CompoundDistribution">
+                    
+            <distribution id="prior" spec="CompoundDistribution">
+                            
+                <distribution id="SPEEDEMONYuleSkylineCollapse.t:from_tree_no_ constant_no_outgroup" spec="speedemon.YuleSkylineCollapse" birthRateRate="@SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" equalEpochs="true" groupCount="4" linkedMean="true" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="@SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup">
+                                    
+                    <epsilon id="epsilon.speedemon.t:from_tree_no_ constant_no_outgroup" spec="Function$Constant" value="1.0E-5"/>
+                                    
+                    <parameter id="SPEEDEMONYuleSkylineCollapseBirthRateShape.t:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" estimate="false" lower="0.0" name="birthRateShape">2.0</parameter>
+                                
+                </distribution>
+                            
+                <prior id="YuleSkylineCollapseBirthRateRatePrior.t:from_tree_no_ constant_no_outgroup" name="distribution" x="@SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup">
+                                    
+                    <LogNormal id="LogNormalDistributionModel.1" meanInRealSpace="true" name="distr">
+                                            
+                        <parameter id="RealParameter.6" spec="parameter.RealParameter" lower="0.0" name="M">1.0</parameter>
+                                            
+                        <parameter id="RealParameter.7" spec="parameter.RealParameter" lower="0.0" name="S">1.25</parameter>
+                                        
+                    </LogNormal>
+                                
+                </prior>
+                            
+                <prior id="collapseWeight.prior.t:from_tree_no_ constant_no_outgroup" name="distribution" x="@SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup">
+                                    
+                    <Beta id="Beta.0" name="distr">
+                                            
+                        <parameter id="RealParameter.8" spec="parameter.RealParameter" lower="0.0" name="alpha">3.0</parameter>
+                                            
+                        <parameter id="RealParameter.9" spec="parameter.RealParameter" lower="0.0" name="beta">1.0</parameter>
+                                        
+                    </Beta>
+                                
+                </prior>
+                            
+                <prior id="SnapperCoalescentRatePrior.t:from_tree_no_ constant_no_outgroup" name="distribution" x="@snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup">
+                                    
+                    <Gamma id="Gamma.2" name="distr">
+                                            
+                        <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="alpha">0.01</parameter>
+                                            
+                        <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="beta">100.1</parameter>
+                                        
+                    </Gamma>
+                                
+                </prior>
+                        
+            </distribution>
+                    
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                            
+                <distribution id="snapperTreeLikelihood.from_tree_no_ constant_no_outgroup" spec="snapper.SnapperTreeLikelihood" N="17" data="@snapper.from_tree_no_ constant_no_outgroup" non-polymorphic="false" pattern="coalescentRate" tree="@Tree.t:from_tree_no_ constant_no_outgroup">
+                                    
+                    <siteModel id="SnapperSiteModel.s:from_tree_no_ constant_no_outgroup" spec="SiteModel">
+                                            
+                        <substModel id="SnapperSubstModel.s:from_tree_no_ constant_no_outgroup" spec="snapper.SnapSubstitutionModel" coalescentRate="@snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup">
+                                                    
+                            <parameter id="snapperU.s:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRateU">1.0</parameter>
+                                                    
+                            <parameter id="snapperV.s:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRateV">1.0</parameter>
+                                                
+                        </substModel>
+                                        
+                    </siteModel>
+                                    
+                    <branchRateModel id="StrictClock.c:from_tree_no_ constant_no_outgroup" spec="beast.base.evolution.branchratemodel.StrictClockModel">
+                                            
+                        <parameter id="clockRate.c:from_tree_no_ constant_no_outgroup" spec="parameter.RealParameter" estimate="false" name="clock.rate">1.0</parameter>
+                                        
+                    </branchRateModel>
+                                
+                </distribution>
+                        
+            </distribution>
+                
+        </distribution>
+            
+        <operator id="SnapperGammaMover.t:from_tree_no_ constant_no_outgroup" spec="snap.operators.GammaMover" coalescenceRate="@snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup" scale="0.75" weight="10.0"/>
+            
+        <operator id="SnapperRateMixer.t:from_tree_no_ constant_no_outgroup" spec="snap.operators.RateMixer" coalescenceRate="@snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup" scaleFactors="0.25" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="10.0"/>
+            
+        <operator id="SPEEDEMONUniformThresholdOperator.t:from_tree_no_ constant_no_outgroup" spec="speedemon.UniformThresholdOperator" epsilon="@epsilon.speedemon.t:from_tree_no_ constant_no_outgroup" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="3.0"/>
+            
+        <operator id="SPEEDEMONEpochTop.t:from_tree_no_ constant_no_outgroup" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="2.0"/>
+            
+        <operator id="SPEEDEMONEpochAll.t:from_tree_no_ constant_no_outgroup" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="2.0"/>
+            
+        <operator id="SPEEDEMONTreeFlex.t:from_tree_no_ constant_no_outgroup" spec="TreeStretchOperator" scaleFactor="0.257" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="2.0"/>
+            
+        <operator id="SPEEDEMONTreeRootScaler.t:from_tree_no_ constant_no_outgroup" spec="kernel.BactrianScaleOperator" rootOnly="true" scaleFactor="0.1" tree="@Tree.t:from_tree_no_ constant_no_outgroup" upper="10.0" weight="3.0"/>
+            
+        <operator id="SPEEDEMONUniformOperator.t:from_tree_no_ constant_no_outgroup" spec="kernel.BactrianNodeOperator" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="30.0"/>
+            
+        <operator id="SPEEDEMONSubtreeSlide.t:from_tree_no_ constant_no_outgroup" spec="kernel.BactrianSubtreeSlide" size="0.907" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="15.0"/>
+            
+        <operator id="SPEEDEMONNarrow.t:from_tree_no_ constant_no_outgroup" spec="Exchange" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="15.0"/>
+            
+        <operator id="SPEEDEMONWide.t:from_tree_no_ constant_no_outgroup" spec="Exchange" isNarrow="false" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="3.0"/>
+            
+        <operator id="SPEEDEMONWilsonBalding.t:from_tree_no_ constant_no_outgroup" spec="WilsonBalding" tree="@Tree.t:from_tree_no_ constant_no_outgroup" weight="3.0"/>
+            
+        <operator id="AdaptableOperatorSampler.SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" spec="AdaptableOperatorSampler" weight="3.0">
+                    
+            <parameter idref="SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup"/>
+                    
+            <operator id="Scale.BirthDeathCollapseModel.t:from_tree_no_ constant_no_outgroup" spec="kernel.BactrianScaleOperator" parameter="@SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" upper="10.0" weight="1.0"/>
+                    
+            <operator id="SampleFromPriorOperator.BirthDeathCollapseModel.t:from_tree_no_ constant_no_outgroup" spec="orc.operators.SampleFromPriorOperator" parameter="@SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" prior2="@YuleSkylineCollapseBirthRateRatePrior.t:from_tree_no_ constant_no_outgroup" weight="1.0"/>
+                
+        </operator>
+            
+        <operator id="AdaptableOperatorSampler.SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" spec="AdaptableOperatorSampler" weight="3.0">
+                    
+            <parameter idref="SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup"/>
+                    
+            <operator id="Scale.SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" spec="operator.kernel.BactrianIntervalOperator" parameter="@SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" weight="1.0"/>
+                    
+            <operator id="SampleFromPriorOperator.SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" spec="orc.operators.SampleFromPriorOperator" parameter="@SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" prior2="@collapseWeight.prior.t:from_tree_no_ constant_no_outgroup" weight="1.0"/>
+                
+        </operator>
+            
+        <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+                    
+            <log idref="posterior"/>
+                    
+            <log idref="likelihood"/>
+                    
+            <log idref="prior"/>
+                    
+            <log id="TreeHeight.t:from_tree_no_ constant_no_outgroup" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:from_tree_no_ constant_no_outgroup"/>
+                    
+            <parameter idref="snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup" name="log"/>
+                    
+            <log id="ThetaLogger.t:from_tree_no_ constant_no_outgroup" spec="snap.ThetaLogger" coalescenceRate="@snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup"/>
+                    
+            <log idref="SPEEDEMONYuleSkylineCollapse.t:from_tree_no_ constant_no_outgroup"/>
+                    
+            <parameter idref="SPEEDEMONcollapseWeight.t:from_tree_no_ constant_no_outgroup" name="log"/>
+                    
+            <parameter idref="SPEEDEMONYuleSkylineCollapseBirthRateRate.t:from_tree_no_ constant_no_outgroup" name="log"/>
+                
+        </logger>
+            
+        <logger id="screenlog" spec="Logger" logEvery="1000">
+                    
+            <log idref="posterior"/>
+                    
+            <log idref="likelihood"/>
+                    
+            <log idref="prior"/>
+                
+        </logger>
+            
+        <logger id="treelog.t:from_tree_no_ constant_no_outgroup" spec="Logger" fileName="$(filebase).trees" logEvery="1000" mode="tree">
+                    
+            <log id="TreeWithMetaDataLogger.t:from_tree_no_ constant_no_outgroup" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:from_tree_no_ constant_no_outgroup">
+                            
+                <parameter idref="snapperCoalescentRate.t:from_tree_no_ constant_no_outgroup" name="metadata"/>
+                        
+            </log>
+                
+        </logger>
+        
+    </run>
+
+    
+
+</beast>
